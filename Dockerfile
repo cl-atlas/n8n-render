@@ -13,14 +13,7 @@ RUN apk add --no-cache \
     ca-certificates \
     ttf-freefont \
     su-exec \
-    ffmpeg \
-    imagemagick \
-    poppler-utils \
-    ghostscript \
-    graphicsmagick \
-    yt-dlp || \
-    pip install --no-cache-dir yt-dlp \
-    pip install --no-cache-dir mobi
+    ffmpeg
 
 RUN npm install -g puppeteer n8n && \
   npm cache clean --force
